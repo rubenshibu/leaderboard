@@ -15,7 +15,7 @@ var url = "https://spreadsheets.google.com/feeds/cells/1NrVoO6Wqe-3E3kC8hH-MIqy-
         
       var container = document.querySelector(".table-content");
       container.innerHTML +=
-      '<div class="col-lg-4  rank">'+
+      '<div class="col-lg-4 col-md-4 col-sm-4 col-xl-4  rank">'+
         response.feed.entry[i].content.$t+
       '</div><hr>'
         
