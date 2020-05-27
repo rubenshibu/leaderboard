@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+}
+
+/* Simple Card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+
+  border: px solid #4990e2;
+  padding: 24px;
+  margin: 50px auto;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: roboto;
+  font-weight: 900;
+  letter-spacing: 3;
+  color: grey;
+}
+
+.card-content {
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 500;
+  color: grey;
+  width: 800px;
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+
+.card-footer {
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  color: grey;
+}
+
+.rank {
+  padding-bottom: 10px;
+  text-align: center;
+}

@@ -1,11 +1,16 @@
+var url = "https://sheet.best/api/sheets/cb49aab6-348f-4bd3-a698-2fd1a3328929";
 
-var url = "https://spreadsheets.google.com/feeds/cells/1NrVoO6Wqe-3E3kC8hH-MIqy-yKrb5n5DcfxsfWYSzD4/1/public/full?alt=json#"
+// AJAX Request
+var leaderBoard = new XMLHttpRequest();
+leaderBoard.open("GET", url);
+leaderBoard.send();
 
-  // AJAX Request
-  var leaderBoard = new XMLHttpRequest();
-  leaderBoard.open("GET", url);
-  leaderBoard.send();
+leaderBoard.addEventListener("load", function (e) {
+  var data = e.target.response;
+  var response = JSON.parse(data);
+  let resultsData = response;
 
+<<<<<<< HEAD
   leaderBoard.addEventListener("load", function (e) {
     var data = e.target.response;
     var response = JSON.parse(data);
@@ -27,4 +32,14 @@ var url = "https://spreadsheets.google.com/feeds/cells/1NrVoO6Wqe-3E3kC8hH-MIqy-
         
     }
     
+=======
+  resultsData.forEach((result) => {
+    console.log(result);
+    $(".card-content").append(
+      `<div>
+        ${result.Rank} ${result.Name} ${result.Points}
+      </div>`
+    );
+>>>>>>> 24b23c4d9d4bd2071f45e907817ac891829d3ef1
   });
+});
