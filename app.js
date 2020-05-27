@@ -19,10 +19,10 @@ var url = "https://spreadsheets.google.com/feeds/cells/1NrVoO6Wqe-3E3kC8hH-MIqy-
         response.feed.entry[i].content.$t+
       '</div><hr>'+
       '<div class="col-lg-7 col-md-7 col-sm-7 col-xl-7  name">'+
-      response.feed.entry[i+1].content.$t+
+        response.feed.entry[i+1].content.$t+
       '</div><hr>'+
       '<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3  point">'+
-      response.feed.entry[i+2].content.$t+
+        response.feed.entry[i+2].content.$t+
       '</div><hr>'
         
     }
