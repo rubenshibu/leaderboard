@@ -13,13 +13,13 @@ leaderBoard.addEventListener("load", function (e) {
   resultsData.forEach((result) => {
     console.log(result);
     $(".table-content").append(
-      `<div class="col-lg-2 col-sm-2 col-md-2 col-xl-2">
+      `<div class="col-lg-2 col-sm-2 col-md-2 col-xl-2 col-2">
         ${result.Rank}
       </div>
-      <div class="col-lg-7 col-sm-7 col-md-7 col-xl-7">
+      <div class="col-lg-7 col-sm-7 col-md-7 col-xl-7 col-7">
         ${result.Name}
       </div>
-      <div class="col-lg-3 col-sm-3 col-md-3 col-xl-3">
+      <div class="col-lg-3 col-sm-3 col-md-3 col-xl-3 col-3">
         ${result.Points}
       </div>`
     );
